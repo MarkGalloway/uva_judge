@@ -1,3 +1,29 @@
+/* UVa problem: 00750 8 Queens Chess Problem
+ *
+ * Topic: Backtracking
+ *
+ * Level: non-trivial
+ *
+ * Brief problem description:
+ *
+ *   Print all combinations of chess board placements of 8
+ *   Queens such that they can't attack each other.
+ *
+ * Solution Summary:
+ *
+ *   Todo...
+ *
+ * Used Resources:
+ *
+ *   Competitive Programming 3
+ *
+ * I hereby certify that I have produced the following solution myself
+ * using the resources listed above in accordance with the CMPUT 403
+ * collaboration policy.
+ *
+ * --- Mark Galloway
+ */
+
 #include <iostream>
 #include <array>
 #include <bitset>
@@ -19,6 +45,7 @@ bool isSafe(int r, int c) {
   return !rw[r] && !rw[r] && !ld[r - c + n - 1] && !rd[r + c];
 }
 
+
 /*
  *  Place Queen at this position and mark rows and diagonals
  *  as occupied
@@ -28,6 +55,7 @@ void placeQueen(int r, int c) {
   row[c] = r;
 }
 
+
 /*
  *  Remove Queen at this position and mark rows and diagonals
  *  as free
@@ -36,6 +64,7 @@ void removeQueen(int r, int c) {
   rw[r] = ld[r - c + n - 1] = rd[r + c] = false;
   row[c] = 0;
 }
+
 
 /*
  * Recursively place all queens onto the 8,8 board.

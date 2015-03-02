@@ -1,9 +1,9 @@
-Total:         13                                (? +1)
+Total:         16
 Trivial:        5
-Non-Trivial:    8                                (? +1)
+Non-Trivial:   11
 
 Feb 4  (11): 0.75/day, 5.66/week
-Feb 9  (13):
+Feb 27  (15):
 
 (5) 1. Data Structure (ch2)
 -------------------
@@ -37,16 +37,17 @@ Feb 9  (13):
     X
 
 
-(2) 7. Backtracking (ch3)                         (? +1)
+(4) 7. Backtracking (ch3)
 -------------------
 (0) Trivial
     X
     X
-(2) NonTrivial
+(4) NonTrivial
     *11195 Another n-Queen Problem                #### Comment me!
-    *
+    *                                             #### Fucking sticks
     00193 Graph Coloring                          #### Comment me!
-    ?00750 8 Queens Chess Problem                 #### Comment me!
+    00750 8 Queens Chess Problem                  #### Comment me!
+    00759 The Hamming Distance Problem
 
 
 (1) 8. Graph Traversal (ch4)
@@ -59,13 +60,13 @@ Feb 9  (13):
     X
 
 
-(0) 10. Dynamic Programming (ch3, ?)
+(1) 10. Dynamic Programming (ch3, ?)
 -------------------
 (0) Trivial
     *
     *
-(0) NonTrivial
-    X
+(1) NonTrivial
+    00231 Testing The CATCHER
     X
 
 
@@ -74,3 +75,6 @@ Things to come back to...
 - Data Structures - Fennwick Tree
 - Strings - 2D grid
 - Strings/DP - String Processing with DP
+- Fucking STICKS
+- Binary Search 3.3 (other?)
+- Greedy 3.4 (other?)

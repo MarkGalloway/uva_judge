@@ -1,3 +1,28 @@
+/* UVa problem: 11195 Another n-Queen Problem
+ *
+ * Topic: Backtracking
+ *
+ * Level: non-trivial
+ *
+ * Brief problem description:
+ *
+ *   Todo...
+ *
+ * Solution Summary:
+ *
+ *   Todo...
+ *
+ * Used Resources:
+ *
+ *   Competitive Programming 3
+ *
+ * I hereby certify that I have produced the following solution myself
+ * using the resources listed above in accordance with the CMPUT 403
+ * collaboration policy.
+ *
+ * --- Mark Galloway
+ */
+
 #include <iostream>
 
 using namespace std;

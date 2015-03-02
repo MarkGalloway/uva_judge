@@ -133,7 +133,7 @@ int main() {
       // sticks = 4;
       sticks = stick_sum/(*it);
 
-      cout << "Trying Length = " << length << " Sticks = " << sticks << endl;
+      // cout << "Trying Length = " << length << " Sticks = " << sticks << endl;
 
       used[0] = true;
       if(backtrack_sticks(1, pieces[0], n-1)) {
