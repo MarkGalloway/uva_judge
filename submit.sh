@@ -17,6 +17,9 @@ cp Backtracking/Uva00729.C Solutions
 cp GraphTraversal/UVa10672.C Solutions
 
 cp DynamicProgramming/Uva00231.C Solutions
+cp DynamicProgramming/Uva10819.C Solutions
+cp DynamicProgramming/Uva00674.C Solutions
+cp DynamicProgramming/Uva10003.C Solutions
 
 tar -cvzf solutions.tgz Solutions/UVa*
 
