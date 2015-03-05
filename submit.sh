@@ -12,7 +12,12 @@ cp String/UVa11475.C Solutions
 cp String/UVa11512.C Solutions
 cp String/UVa11837.C Solutions
 
+cp Sorting/UVa10327.C Solutions
+
 cp Backtracking/Uva00729.C Solutions
+cp Backtracking/Uva00193.C Solutions
+cp Backtracking/Uva00750.C Solutions
+cp Backtracking/Uva11195.C Solutions
 
 cp GraphTraversal/UVa10672.C Solutions
 
@@ -20,6 +25,7 @@ cp DynamicProgramming/Uva00231.C Solutions
 cp DynamicProgramming/Uva10819.C Solutions
 cp DynamicProgramming/Uva00674.C Solutions
 cp DynamicProgramming/Uva10003.C Solutions
+cp DynamicProgramming/Uva00216.C Solutions
 
 tar -cvzf solutions.tgz Solutions/UVa*
 

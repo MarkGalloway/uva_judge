@@ -6,11 +6,12 @@
  *
  * Brief problem description:
  *
- *   Todo...
+ *   Print the optimal bi-coloring of a graph (Find the
+ *   Maximal Independent Set).
  *
  * Solution Summary:
  *
- *   Todo...
+ *   Recursive Backtracking to find the Maximal Independent Set.
  *
  * Used Resources:
  *
@@ -38,6 +39,11 @@ vector<bs> adjMatrix;
 bs solution, current, used;
 int n;
 
+/*
+ * Backtack through all unused nodes, adding their
+ * neighbors to the used set each call such that
+ * we find the maximal independent set
+ */
 void backtrack(int i, bitset<100> used) {
 
   // Base Case, we have explored all nodes
@@ -83,8 +89,8 @@ int main() {
       adjMatrix[i][i] = 1;
     }
 
+    // Find Maximal Independent Set
     backtrack(0, used);
-
 
     // Print Solution
     cout << solution.count() << endl;
@@ -99,8 +105,6 @@ int main() {
       }
     }
     cout << endl;
-
-
   }
 
   return 0;

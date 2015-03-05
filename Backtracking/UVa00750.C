@@ -7,11 +7,13 @@
  * Brief problem description:
  *
  *   Print all combinations of chess board placements of 8
- *   Queens such that they can't attack each other.
+ *   Queens such that they can't attack each other and one queen is
+ *   in a specified row/col.
  *
  * Solution Summary:
  *
- *   Todo...
+ *   Recursive Backtracking as presented in the textbook, but with all
+ *   recommended performance improvements from the exercises
  *
  * Used Resources:
  *

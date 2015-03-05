@@ -6,11 +6,13 @@
  *
  * Brief problem description:
  *
- *   Todo...
+ *    Find the number of placements of n queens on an n*n board so that no two
+ *    queens attack each other.
+ *    There are some bad squares where queens cannot be placed.
  *
  * Solution Summary:
  *
- *   Todo...
+ *   Recursive backtracking using bitmasks, as presented in the textbook.
  *
  * Used Resources:
  *
@@ -40,7 +42,9 @@ void backtrack(int col, int rw, int ld, int rd) {
   }
   // Recursive Case: Try the next column
   else {
-    int pos = OK & (~(rw | rd | ld | board[col])); // Find the available rows
+    // Find the available rows
+    int pos = OK & (~(rw | rd | ld | board[col]));
+
     while(pos) {
       int p = pos & -pos; // Find the Least Significant Bit (The next row)
       pos -= p;           // Remove the Least Significant Bit (The Row)
