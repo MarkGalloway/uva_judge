@@ -183,7 +183,7 @@ private:
     // Inside query range, return the value
     if (L >= i && R <= j) return st[node];
 
-    // cCompute the bucaneer count recursively
+    // Compute the bucaneer count recursively
     int lval = lazy_query(left(node), L, (L+R) / 2, i, j);
     int rval = lazy_query(right(node), (L+R) / 2 + 1, R, i, j);
 
