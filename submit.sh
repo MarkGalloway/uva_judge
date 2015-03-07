@@ -14,6 +14,7 @@ cp String/UVa11837.C Solutions
 
 cp Sorting/UVa10327.C Solutions
 cp Sorting/UVa10026.C Solutions
+cp Sorting/UVa10810.C Solutions
 
 cp Backtracking/UVa00729.C Solutions
 cp Backtracking/UVa00193.C Solutions

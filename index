@@ -1,9 +1,10 @@
-Total:         22
+Total:         23
 Trivial:        8
-Non-Trivial:   14
+Non-Trivial:   15
 
 Feb 4 (11): 0.75/day, 5.66/week
 Mar 5 (22): 1.08/day
+
 
 (5) 1. Data Structure (ch2)
 -------------------
@@ -27,15 +28,33 @@ Mar 5 (22): 1.08/day
     11475 Extend To Palindrome
 
 
-(2) 3. Sorting (ch3, ?)
+(3) 3. Sorting (ch3, ?)
 -------------------
 (1) Trivial
     *10327 Flip Sort
-(1) NonTrivial
+(2) NonTrivial
     *10026 Shoemaker's Problem
+    10810 Utra-QuickSort
     X
     X
-    X
+
+
+(0) 4. Arithmetic
+-------------------
+(0) Trivial
+(0) NonTrivial
+
+
+(0) 5. Combinatorics
+-------------------
+(0) Trivial
+(0) NonTrivial
+
+
+(0) 6. Number Theory
+-------------------
+(0) Trivial
+(0) NonTrivial
 
 
 (4) 7. Backtracking (ch3)
@@ -59,6 +78,12 @@ Mar 5 (22): 1.08/day
     X
 
 
+(0) 9. Graph Algorithms
+-------------------
+(0) Trivial
+(0) NonTrivial
+
+
 (5) 10. Dynamic Programming (ch3, ?)
 -------------------
 (2) Trivial
@@ -70,13 +95,27 @@ Mar 5 (22): 1.08/day
     00216 Getting in line
 
 
+(0) 11. Geometry
+-------------------
+(0) Trivial
+(0) NonTrivial
+
+
+(0) 12. Other
+-------------------
+(0) Trivial
+(0) NonTrivial
+
+
 Things to come back to...
 -------------------
 - Data Structures - Fennwick Tree
 - Strings - 2D grid
 - Strings/DP - String Processing with DP
 - Fucking STICKS
-- Binary Search 3.3 (other?)
+- Binary Search/Divide And Conquer 3.3 (other?)
 - Greedy 3.4 (other?)
 - NonClassical DP
 - Bottom Up DP
+- Pancake sort (trivial)  120 - Stacks of Flapjacks
+- Sorting in Linear Time (trivial) 11462 - Age Sort
