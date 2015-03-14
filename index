@@ -1,9 +1,10 @@
-Total:         23
+Total:         25
 Trivial:        8
-Non-Trivial:   15
+Non-Trivial:   17
 
 Feb 4 (11): 0.75/day, 5.66/week
 Mar 5 (22): 1.08/day
+Mar 14 (25):
 
 
 (5) 1. Data Structure (ch2)
@@ -28,15 +29,15 @@ Mar 5 (22): 1.08/day
     11475 Extend To Palindrome
 
 
-(3) 3. Sorting (ch3, ?)
+(5) 3. Sorting (ch3, ?)
 -------------------
 (1) Trivial
     *10327 Flip Sort
-(2) NonTrivial
+(4) NonTrivial
     *10026 Shoemaker's Problem
     10810 Utra-QuickSort
-    X
-    X
+    10905 Children's Game
+    00612 DNA Sorting
 
 
 (0) 4. Arithmetic
