@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include <cstring>
+#include <algorithm>
+#include <bitset>
 
 using namespace std;
 
@@ -8,141 +11,158 @@ typedef vector<int> vi;
 typedef set<int> si;
 typedef vector<bool> vb;
 
-vi pieces;
+int N, length, num_sticks, stick_sum;
+vi sticks;
 si lengths;
 vb used;
 
-int sticks, length, n;
+bool memo[10000][1000];
 
 
 /*
- * Precompute possible stick lengths
+ * Precalculate possible stick lengths
  */
-void precompute_sticks(int sum, int max) {
-  for (int num_sticks = 1; num_sticks <= sum; ++num_sticks) {
-    // A possible number of sticks is a divisor of sum
-    if(sum % num_sticks == 0) {
-      // length of each stick cannot be greater than largest stick
-      if(sum/num_sticks <= max) {
-        lengths.insert(num_sticks);
-      }
+void precalculate_lengths(int sum, int max) {
+  for (int length = max; length <= sum; ++length) {
+    if(sum % length == 0) {
+      lengths.insert(length);
     }
   }
 }
 
-bool backtrack_sticks(int index, int current_length, int sticks_left) {
-  // Basecase: Current stick is at length
-  if(current_length == length) {
+bool backtrack(int index, int current_length, int remaining, int pieces_left) {
 
-    // cout << "DEBUG: formed stick. pieces left: " << sticks_left << endl;
+  // Basecase, we are out of sticks
+  if(pieces_left == 0 && remaining == 0) {
+    return true;
+  }
+  else if(remaining == 0 || pieces_left == 0)
+    return false;
 
-    // We have used all sticks
-    if(sticks_left == 0) {
-      // cout << "WIN" << endl;
-      return true;
+  // if(pieces_left == 0)
+  //   return true;
+
+  // Prune: This length combo has failed already
+  if(!memo[current_length][pieces_left]) return false;
+
+
+  // Prune: Smallest unused is larger than remaining length
+  int smallest = 99999;
+  for (int i = N-1; i > 0; --i)
+    if(!used[i]) {
+      smallest = sticks[i];
+      break;
+    }
+  if(smallest > remaining) return false;
+
+  // Prune: Largest unused is larger than remaining length
+  // int largest = -1;
+  // for (int i = 0; i < N; ++i)
+  //   if(!used[i]) {
+  //     largest = sticks[i];
+  //     break;
+  //   }
+  // if(largest > remaining) return false;
+
+  bitset<100> tried;
+
+  // Recursive case: Build the stick
+  for (int i = index; i < N; ++i) {
+    // Prune: Stick is used
+    if(used[i]) continue;
+
+    // Prune: Stick is too large
+    if(current_length + sticks[i] > length) continue;
+
+    // Prune: This length combo has failed already
+    // if(!memo[current_length + sticks[i]][pieces_left-1]) continue;
+
+    // Prune: Already tried this length
+    if(tried.test(i)) continue;
+
+    // If the next stick fits
+    if(current_length + sticks[i] < length) {
+      used[i] = true;
+      if(backtrack(i+1, current_length + sticks[i], remaining - sticks[i], pieces_left - 1)) return true;
+      // memo[current_length + sticks[i]] = false;
+      // memo[current_length][sticks[i]] = false;
+      memo[current_length + sticks[i]][pieces_left-1] = false;
+      used[i] = false;
+      tried.set(i);
+    }
+    // Completed a stick
+    else {
+      used[i] = true;
+      if(backtrack(0, 0, remaining - sticks[i], pieces_left - 1)) return true;
+      // memo[current_length][sticks[i]] = false;
+      memo[current_length + sticks[i]][pieces_left-1] = false;
+      used[i] = false;
+      tried.set(i);
     }
 
-    // Start the next stick
-    index = 0;
-    current_length = 0;
-
-    // for (int i = 0; i < n; ++i) {
-    //   if(!used[i]) {
-    //     used[i] = true;
-    //     current_length = pieces[i];
-    //     cout << "DEBUG: Index is... " << i << endl;
-    //     cout << "DEBUG: Adding " << pieces[i] << endl;
-    //     --sticks_left;
-    //     index = 0;
-    //     break;
-    //   }
-    // }
   }
-  // if(used[3]) {
-  //   cout << "WTF true" << endl;
-  // } else {
-  //   cout << "WTF false" << endl;
-  // }
-
-  // Recursive case: Choose next piece
-  // cout << "DEBUG: Index is... " << index << endl;
-  for (int i = index; i < n; ++i) {
-    if(!used[i] /*&& (pieces[i] + current_length <= length) */) {
-      if(pieces[i] + current_length <= length) {
-        used[i] = true;
-        // cout << "DEBUG: Index is... " << i << endl;
-        // cout << "DEBUG: Adding "<< current_length <<" + " << pieces[i] << endl;
-        bool rval = backtrack_sticks(i, pieces[i] + current_length, sticks_left-1);
-        if(rval)
-          return true;
-        // cout << "DEBUG: Removing " << pieces[i] << endl;
-        used[i] = false;
-      }
-      else {
-        // cout << "DEBUG: Rejecting "<< current_length <<" + " << pieces[i] << endl;
-      }
-    }
-  }
-  // cout << "DEBUG: Failed, backtracking" << endl;
-  // Failed to make stick of this length
+  // Matching failed
+  memo[current_length][pieces_left-1] = false;
   return false;
 }
 
 int main() {
+
   while (1) {
-    cin >> n;
+    cin >> N >> ws;
 
-    // End of Cases
-    if(n == 0)
-      break;
+    // End of cases
+    if(N == 0) break;
 
-    // Prep for case
-    pieces.clear();
+    // Init
+    sticks.assign(N, 0);
+    used.assign(N, false);
     lengths.clear();
-    used.clear();
+    stick_sum = 0;
 
-
-    int stick, stick_sum = 0, max_stick = -1;
-    for (int i = 0; i < n; ++i) {
-      // Read in sticks
-      cin >> stick;
-      pieces.push_back(stick);
-      used.push_back(false);
+    int max_stick = -1;
+    // Read in the sticks
+    for (int i = 0; i < N; ++i) {
+      cin >> sticks[i];
 
       // Track the sum of sticks
-      stick_sum += stick;
+      stick_sum += sticks[i];
 
       // Track the largest stick we've seen.
-      if(stick > max_stick)
-        max_stick = stick;
+      if(sticks[i] > max_stick)
+        max_stick = sticks[i];
     }
 
-    // Precomputation
-    precompute_sticks(stick_sum, max_stick);
+    sort(sticks.begin(), sticks.end(), greater<int>());
+
+    // Precalculate
+    precalculate_lengths(stick_sum, max_stick);
 
     // for(auto it = lengths.begin(); it != lengths.end(); ++it) {
+    //   length = *it;
+    //   num_sticks = stick_sum/length;
     //   cout << *it << " ";
+    //   cout << "length: " << length << " num_sticks: " << num_sticks << " stick sum: " << stick_sum << endl;
     // }
-    // cout << endl;
+    // cout << endl << endl;
 
-    // Backtrack on each possible stick length
+     // Backtrack on each possible stick length
     for(auto it = lengths.begin(); it != lengths.end(); ++it) {
 
+      memset(memo, true, sizeof memo);
+
       length = *it;
-      // length = 6;
-      // sticks = 4;
-      sticks = stick_sum/(*it);
+      num_sticks = stick_sum/length;
 
-      // cout << "Trying Length = " << length << " Sticks = " << sticks << endl;
+      // cout << "length: " << length << " num_sticks: " << num_sticks << " stick sum: " << stick_sum << endl;
 
-      used[0] = true;
-      if(backtrack_sticks(1, pieces[0], n-1)) {
+      if(backtrack(0, 0, stick_sum, N)) {
         // Solution found
         cout << length << endl;
-
         break;
       }
     }
   }
+
   return 0;
 }
