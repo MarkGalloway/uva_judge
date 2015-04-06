@@ -1,11 +1,12 @@
-Total:         29
-Trivial:        9
-Non-Trivial:   20
+Total:         34
+Trivial:       12
+Non-Trivial:   22
 
-Feb 4 (11): 0.75/day, 5.66/week
-Mar 5 (22): 1.08/day
+Feb 4  (11): 0.75/day, 5.66/week
+Mar 5  (22): 1.08/day
 Mar 14 (25):
 Mar 19 (30): 1.36/day, ~10/week
+Apr 5  (34):
 
 
 (5) 1. Data Structure (ch2)
@@ -41,13 +42,13 @@ Mar 19 (30): 1.36/day, ~10/week
     00612 DNA Sorting
 
 
-(3) 4. Arithmetic                (est (+1,+1))
+(4) 4. Arithmetic                (est (+0,+1))
 -------------------
-(1) Trivial
+(2) Trivial
     *11955 Binomial Theorem
-    X
+    10931 Parity
 (2) NonTrivial
-    X   *00202 Repeating Decimals
+    X       *00202 Repeating Decimals (Started)
     10689 Yet another Number Sequence
     10655 Contemplation! Algebra
 
@@ -63,15 +64,15 @@ Mar 19 (30): 1.36/day, ~10/week
     X
 
 
-(0) 6. Number Theory             (est (+3,+2))
+(4) 6. Number Theory             (est (+1,+0))
 -------------------
-(0) Trivial
-    X   *00374 Big Mod
-    X   * Enumerating Rational Numbers
-    X
-(0) NonTrivial
-    X
-    X
+(2) Trivial
+    *00374 Big Mod
+    X       * 11327Enumerating Rational Numbers  (Started, Confusing)
+    543 Golbach's Conjecture
+(2) NonTrivial
+    406 Prime cuts
+    583 Prime Factors
 
 
 (4) 7. Backtracking (ch3)             (est (+0,+1))
@@ -92,8 +93,10 @@ Mar 19 (30): 1.36/day, ~10/week
     X*   The Tower Of Babylon
     X
 (0) NonTrivial
-    X
-    X
+    X   929 Number Maze (suggested by Tam)
+    X   125 Numbering Paths (NT Floyd warshals?)
+
+10724 ??? FLOYD WARSH ??
 
 
 (0) 9. Graph Algorithms             (est (+3,+2))
@@ -125,7 +128,9 @@ Mar 19 (30): 1.36/day, ~10/week
     X
     X
 (0) NonTrivial
-    X*  The Fortified Forest
+    X*  811 The Fortified Forest    # Marcus said easy
+
+10466 ??? GEOM
 
 
 (1) 12. Other                   (est (+4,+0))
@@ -137,6 +142,10 @@ Mar 19 (30): 1.36/day, ~10/week
     X      ?? Fennwick Tree
 (1) NonTrivial
     1266 Magic Square
+
+Suggested NT: 105, 11491
+Suggested T: 10452
+?? 11087
 
 
 Things to come back to...

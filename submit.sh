@@ -21,6 +21,12 @@ cp Sorting/UVa00612.C Solutions
 cp Arithmetic/UVa11955.C Solutions
 cp Arithmetic/UVa10689.C Solutions
 cp Arithmetic/UVa10655.C Solutions
+cp Arithmetic/UVa10931.C Solutions
+
+cp NumberTheory/UVa374.C Solutions
+cp NumberTheory/UVa543.C Solutions
+cp NumberTheory/UVa406.C Solutions
+cp NumberTheory/UVa583.C Solutions
 
 cp Backtracking/UVa00729.C Solutions
 cp Backtracking/UVa00193.C Solutions
