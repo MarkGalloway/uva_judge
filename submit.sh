@@ -23,6 +23,11 @@ cp Arithmetic/UVa10689.C Solutions
 cp Arithmetic/UVa10655.C Solutions
 cp Arithmetic/UVa10931.C Solutions
 
+cp Combinatorics/UVa10223.C Solutions
+cp Combinatorics/UVa12463.C Solutions
+cp Combinatorics/UVa11330.C Solutions
+cp Combinatorics/UVa10303.java Solutions
+
 cp NumberTheory/UVa374.C Solutions
 cp NumberTheory/UVa543.C Solutions
 cp NumberTheory/UVa406.C Solutions
@@ -34,6 +39,7 @@ cp Backtracking/UVa00750.C Solutions
 cp Backtracking/UVa11195.C Solutions
 
 cp GraphTraversal/UVa10672.C Solutions
+cp GraphTraversal/UVa12442.C Solutions
 
 cp DynamicProgramming/UVa00231.C Solutions
 cp DynamicProgramming/UVa10819.C Solutions
@@ -41,7 +47,11 @@ cp DynamicProgramming/UVa00674.C Solutions
 cp DynamicProgramming/UVa10003.C Solutions
 cp DynamicProgramming/UVa00216.C Solutions
 
+cp Geometry/UVa10065.C Solutions
+cp Geometry/UVa11447.C Solutions
+
 cp Other/UVa1266.C Solutions
+cp Other/UVa11727.C Solutions
 
 tar -cvzf solutions.tgz Solutions/UVa*
 
