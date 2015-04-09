@@ -96,17 +96,9 @@ int main() {
     // point last = points[n-2];
     // sum_dist += dist(prev, last);
 
-    double temp, m, c;
-    double highest = 0.0;
-      for(int j = 1 ; j < n ; j++ ){
-        if( points[j].y > highest ){
-          m = (points[j].y-points[j-1].y)/(points[j].x-points[j-1].x);
-          c = points[j].y - m*points[j].x;
-          temp = (highest-c)/m;
-          sum_dist += dist(points[j], point(temp, highest));
-          highest = points[j].y;
-        }
-      }
+
+
+
 
     // cout << "last: " << last.x << ", " << last.y << endl;
     // cout << "prev: " << prev.x << ", " << prev.y << endl;

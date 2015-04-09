@@ -40,6 +40,12 @@ cp Backtracking/UVa11195.C Solutions
 
 cp GraphTraversal/UVa10672.C Solutions
 cp GraphTraversal/UVa12442.C Solutions
+cp GraphTraversal/UVa200.C Solutions
+cp GraphTraversal/UVa10305.C Solutions
+
+cp GraphAlgorithms/UVa10034.C Solutions
+cp GraphAlgorithms/UVa869.C Solutions
+cp GraphAlgorithms/UVa821.C Solutions
 
 cp DynamicProgramming/UVa00231.C Solutions
 cp DynamicProgramming/UVa10819.C Solutions
@@ -49,9 +55,12 @@ cp DynamicProgramming/UVa00216.C Solutions
 
 cp Geometry/UVa10065.C Solutions
 cp Geometry/UVa11447.C Solutions
+cp Geometry/UVa10678.C Solutions
+cp Geometry/UVa10263.C Solutions
 
 cp Other/UVa1266.C Solutions
 cp Other/UVa11727.C Solutions
+cp Other/UVa11172.C Solutions
 
 tar -cvzf solutions.tgz Solutions/UVa*
 

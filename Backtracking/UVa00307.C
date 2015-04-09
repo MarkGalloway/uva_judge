@@ -16,7 +16,7 @@ vi sticks;
 si lengths;
 vb used;
 
-bool memo[10000][1000];
+// bool memo[10000][1000];
 
 
 /*
@@ -43,7 +43,7 @@ bool backtrack(int index, int current_length, int remaining, int pieces_left) {
   //   return true;
 
   // Prune: This length combo has failed already
-  if(!memo[current_length][pieces_left]) return false;
+  // if(!memo[current_length][pieces_left]) return false;
 
 
   // Prune: Smallest unused is larger than remaining length
@@ -86,7 +86,7 @@ bool backtrack(int index, int current_length, int remaining, int pieces_left) {
       if(backtrack(i+1, current_length + sticks[i], remaining - sticks[i], pieces_left - 1)) return true;
       // memo[current_length + sticks[i]] = false;
       // memo[current_length][sticks[i]] = false;
-      memo[current_length + sticks[i]][pieces_left-1] = false;
+      // memo[current_length + sticks[i]][pieces_left-1] = false;
       used[i] = false;
       tried.set(i);
     }
@@ -95,14 +95,14 @@ bool backtrack(int index, int current_length, int remaining, int pieces_left) {
       used[i] = true;
       if(backtrack(0, 0, remaining - sticks[i], pieces_left - 1)) return true;
       // memo[current_length][sticks[i]] = false;
-      memo[current_length + sticks[i]][pieces_left-1] = false;
+      // memo[current_length + sticks[i]][pieces_left-1] = false;
       used[i] = false;
       tried.set(i);
     }
 
   }
   // Matching failed
-  memo[current_length][pieces_left-1] = false;
+  // memo[current_length][pieces_left-1] = false;
   return false;
 }
 
@@ -149,7 +149,7 @@ int main() {
      // Backtrack on each possible stick length
     for(auto it = lengths.begin(); it != lengths.end(); ++it) {
 
-      memset(memo, true, sizeof memo);
+      // memset(memo, true, sizeof memo);
 
       length = *it;
       num_sticks = stick_sum/length;

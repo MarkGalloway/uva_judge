@@ -1,6 +1,6 @@
-Total:         42
-Trivial:       17
-Non-Trivial:   25
+Total:         50     ** Ordering Tasks
+Trivial:       22
+Non-Trivial:   28
 
 Feb 4  (11): 0.75/day, 5.66/week
 Mar 5  (22): 1.08/day
@@ -8,9 +8,10 @@ Mar 14 (25):
 Mar 19 (30): 1.36/day, ~10/week
 Apr 5  (35):           ~5/day
 Apr 6  (39):           ~21 in 4 days
-Apr 7  (42):           ~18 in 3 days
-Apr 8
-Apr 9
+Apr 7  (44):           ~16 in 3 days
+Apr 8  (49):           ~11 in 2 days
+Apr 9  (50):           ~10 in 1 day
+Apr 10
 
 Assuming 80% on pres...
 51 (26 NT, 25 T) => A-
@@ -88,37 +89,37 @@ Assuming 80% on pres...
 (0) Trivial
 (4) NonTrivial
     *11195 Another n-Queen Problem
-    *                                               #### Fucking sticks
+    *           Sticks                              #### Fucking sticks
     00193 Graph Coloring
     00750 8 Queens Chess Problem
     00759 The Hamming Distance Problem
 
 
-(2) 8. Graph Traversal (ch4)             (est (+2,+1))
+(4) 8. Graph Traversal (ch4)             (est (+1,+0))
 -------------------
 (1) Trivial
     *10672 Marbles On A Tree
-    X*   The Tower Of Babylon
-    X
-(1) NonTrivial
+    10305 Ordering Tasks
+    X           *The Tower Of Babylon               #### Time consuming ??
+(2) NonTrivial
     12442 Forwarding Emails
-    X       Rare order???
-            SSSP We Ship Cheap  ????
-            Wetlands of Florida ????
+    200 Rare order
 
 
-(0) 9. Graph Algorithms                  (est (+3,+2))
+(2) 9. Graph Algorithms                  (est (+2,+0))
 -------------------
 (0) Trivial
+    821 Page Hopping
     X
     X
-    X
-(0) NonTrivial
-    X*   Freckles
-    X*   Airline Comparison (79.xx%) ??
+(2) NonTrivial
+    *10034 Freckles
+    *869 Airline Comparison
+
     ???? 125 Numbering Paths (NT Floyd warshals?)
     ???? 10724 ??? FLOYD WARSH ??
     ???? 929 Number Maze (suggested by Tam)
+
 
 (5) 10. Dynamic Programming
 -------------------
@@ -131,13 +132,13 @@ Assuming 80% on pres...
     00216 Getting in line
 
 
-(2) 11. Geometry                         (est (+2,+1))
+(4) 11. Geometry                         (est (+0,+1))
 -------------------
-(2) Trivial
+(4) Trivial
     *10065 Useless Tile Packers
     11447 Reservoir Logs
-    X
-    X
+    10678 The Grazing Cow
+    10263 Railway
 (0) NonTrivial
     X*  811 The Fortified Forest    # Marcus said easy
         -- perimeter of polygon, generate all subsets iteratively with bitmask
@@ -146,11 +147,11 @@ Assuming 80% on pres...
 10466 ??? GEOM
 
 
-(2) 12. Other                             (est (+3,+0))
+(3) 12. Other                             (est (+2,+0))
 -------------------
-(1) Trivial
-    11727 Cost Cutting
-    X
+(2) Trivial
+    11727 Cost Cutting                      ~~~~~~~
+    11172 Relational Operators              ~~~~~~~
     X
     X
 (1) NonTrivial
@@ -169,6 +170,8 @@ Tamara Bain [2:06 AM]
 it's like 20 lines
 Tamara Bain [2:06 AM]
 T but super easy
+
+10219 Combinatorics NT solution is about 3 lines of code IO not included.
 
 
 
