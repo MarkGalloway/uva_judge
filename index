@@ -1,5 +1,5 @@
-Total:         53     ** Ordering Tasks
-Trivial:       24
+Total:         58     ** Ordering Tasks
+Trivial:       29
 Non-Trivial:   29
 
 Feb 4  (11): 0.75/day, 5.66/week
@@ -11,7 +11,7 @@ Apr 6  (39):           ~21 in 4 days
 Apr 7  (44):           ~16 in 3 days
 Apr 8  (49):           ~11 in 2 days
 Apr 9  (50):           ~10 in 1 day
-Apr 10 (53):
+Apr 10 (58):           ~2 short
 
 Assuming 80% on pres...
 51 (26 NT, 25 T) => A-
@@ -21,6 +21,10 @@ Assuming 80% on pres...
 Not AC on uva...
 Graph Alg: 567
 Graph Alg: 10171
+Other: 12372
+Other: 12279
+Other: 11498
+
 
 
 (5) 1. Data Structure
@@ -152,13 +156,16 @@ Graph Alg: 10171
 10466 ??? GEOM
 
 
-(3) 12. Other                             (est (+2,+0))
+(8) 12. Other
 -------------------
-(2) Trivial
+(7) Trivial
     11727 Cost Cutting                      ~~~~~~~
     11172 Relational Operators              ~~~~~~~
-    X
-    X
+    12372 Packing For Holiday
+    12279 Emoogle Balance
+    11498 Division of Nlogonia
+    1124 Celebrity Jeopardy
+    12289 One-Two-Three
 (1) NonTrivial
     1266 Magic Square
 

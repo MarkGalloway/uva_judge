@@ -37,7 +37,7 @@ cp Backtracking/UVa00729.C Solutions
 cp Backtracking/UVa00193.C Solutions
 cp Backtracking/UVa00750.C Solutions
 cp Backtracking/UVa11195.C Solutions
-cp Backtracking/UVa307.C Solutions
+cp Backtracking/UVa00307.C Solutions
 
 cp GraphTraversal/UVa10672.C Solutions
 cp GraphTraversal/UVa12442.C Solutions
@@ -64,7 +64,12 @@ cp Geometry/UVa10263.C Solutions
 cp Other/UVa1266.C Solutions
 cp Other/UVa11727.C Solutions
 cp Other/UVa11172.C Solutions
+cp Other/UVa12372.C Solutions
+cp Other/UVa12279.C Solutions
+cp Other/UVa11498.C Solutions
+cp Other/UVa1124.C Solutions
+cp Other/UVa12289.C Solutions
 
 tar -cvzf solutions.tgz Solutions/UVa*
 
-scp solutions.tgz mgallowa@ug00.cs.ualberta.ca:
+# scp solutions.tgz mgallowa@ug00.cs.ualberta.ca:
