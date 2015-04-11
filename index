@@ -1,6 +1,6 @@
-Total:         50     ** Ordering Tasks
-Trivial:       22
-Non-Trivial:   28
+Total:         53     ** Ordering Tasks
+Trivial:       24
+Non-Trivial:   29
 
 Feb 4  (11): 0.75/day, 5.66/week
 Mar 5  (22): 1.08/day
@@ -11,11 +11,16 @@ Apr 6  (39):           ~21 in 4 days
 Apr 7  (44):           ~16 in 3 days
 Apr 8  (49):           ~11 in 2 days
 Apr 9  (50):           ~10 in 1 day
-Apr 10
+Apr 10 (53):
 
 Assuming 80% on pres...
 51 (26 NT, 25 T) => A-
 55 (28 NT, 27 T) => A
+
+
+Not AC on uva...
+Graph Alg: 567
+Graph Alg: 10171
 
 
 (5) 1. Data Structure
@@ -84,12 +89,12 @@ Assuming 80% on pres...
     583 Prime Factors
 
 
-(4) 7. Backtracking (ch3)                (est (+0,+1))
+(5) 7. Backtracking
 -------------------
 (0) Trivial
-(4) NonTrivial
+(5) NonTrivial
     *11195 Another n-Queen Problem
-    *           Sticks                              #### Fucking sticks
+    *307 Sticks
     00193 Graph Coloring
     00750 8 Queens Chess Problem
     00759 The Hamming Distance Problem
@@ -97,7 +102,7 @@ Assuming 80% on pres...
 
 (4) 8. Graph Traversal (ch4)             (est (+1,+0))
 -------------------
-(1) Trivial
+(2) Trivial
     *10672 Marbles On A Tree
     10305 Ordering Tasks
     X           *The Tower Of Babylon               #### Time consuming ??
@@ -106,12 +111,12 @@ Assuming 80% on pres...
     200 Rare order
 
 
-(2) 9. Graph Algorithms                  (est (+2,+0))
+(5) 9. Graph Algorithms
 -------------------
-(0) Trivial
+(3) Trivial
     821 Page Hopping
-    X
-    X
+    567 Risk
+    10171 Meeting Prof. Miguel...
 (2) NonTrivial
     *10034 Freckles
     *869 Airline Comparison
@@ -160,7 +165,6 @@ Assuming 80% on pres...
 ?? Pancake sort (trivial)  120 - Stacks of Flapjacks
 ?? UVa 00348 - Optimal Array Mult ... *
 ?? Sorting in Linear Time (trivial) 11462 - Age Sort
-?? Fennwick Tree
 Suggested NT: 105, 11491
 Suggested T: 10452, 11547
 ?? 11087
@@ -177,10 +181,8 @@ T but super easy
 
 Things to come back to...
 -------------------
-- Data Structures - Fennwick Tree
 - Strings - 2D grid
 - Strings/DP - String Processing with DP
-- Fucking STICKS
 - Binary Search/Divide And Conquer 3.3 (other?)
 - Greedy 3.4 (other?)
 - NonClassical DP

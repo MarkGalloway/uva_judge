@@ -37,6 +37,7 @@ cp Backtracking/UVa00729.C Solutions
 cp Backtracking/UVa00193.C Solutions
 cp Backtracking/UVa00750.C Solutions
 cp Backtracking/UVa11195.C Solutions
+cp Backtracking/UVa307.C Solutions
 
 cp GraphTraversal/UVa10672.C Solutions
 cp GraphTraversal/UVa12442.C Solutions
@@ -46,6 +47,8 @@ cp GraphTraversal/UVa10305.C Solutions
 cp GraphAlgorithms/UVa10034.C Solutions
 cp GraphAlgorithms/UVa869.C Solutions
 cp GraphAlgorithms/UVa821.C Solutions
+cp GraphAlgorithms/UVa567.C Solutions
+cp GraphAlgorithms/UVa10171.C Solutions
 
 cp DynamicProgramming/UVa00231.C Solutions
 cp DynamicProgramming/UVa10819.C Solutions
