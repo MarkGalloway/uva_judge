@@ -1,0 +1,160 @@
+Total:         58     ** Ordering Tasks
+Trivial:       29
+Non-Trivial:   29
+
+
+Not AC on uva...
+Graph Alg: 567
+Other: 1124
+Other: 11498
+
+
+(5) 1. Data Structure
+-------------------
+(2) Trivial
+    *10815 Andy's First Dictionary
+    *10608 Friends
+(3) NonTrivial
+    00655 False Coin
+    10226 Hardwood Species
+    11402 Ahoy, Pirates!
+
+
+(5) 2. String
+-------------------
+(2) Trivial
+    *11512 GATTACA
+    *11837 Musical Plagiarism
+(3) NonTrivial
+    00856 The Vigenère Cipher
+    10374 Election
+    11475 Extend To Palindrome
+
+
+(5) 3. Sorting
+-------------------
+(1) Trivial
+    *10327 Flip Sort
+(4) NonTrivial
+    *10026 Shoemaker's Problem
+    10810 Utra-QuickSort
+    10905 Children's Game
+    00612 DNA Sorting
+
+
+(4) 4. Arithmetic
+-------------------
+(2) Trivial
+    *11955 Binomial Theorem
+    10931 Parity
+(2) NonTrivial
+    X           *00202 Repeating Decimals           #### Started, Confusing
+    10689 Yet another Number Sequence
+    10655 Contemplation! Algebra
+
+
+(4) 5. Combinatorics
+-------------------
+(2) Trivial
+    X           *12492 Rubik Cycle                  #### Time consuming ??
+    10223 How many nodes ?
+    12463 Little Nephew
+(2) NonTrivial
+    *11330 Andy's Shoes
+    10303 How Many Trees?
+
+
+(4) 6. Number Theory
+-------------------
+(2) Trivial
+    *00374 Big Mod
+    X       * 11327 Enumerating Rational Numbers    #### Started, Confusing
+    543 Golbach's Conjecture
+(2) NonTrivial
+    406 Prime cuts
+    583 Prime Factors
+
+
+(5) 7. Backtracking
+-------------------
+(0) Trivial
+(5) NonTrivial
+    *11195 Another n-Queen Problem
+    *307 Sticks
+    00193 Graph Coloring
+    00750 8 Queens Chess Problem
+    00759 The Hamming Distance Problem
+
+
+(4) 8. Graph Traversal (ch4)
+-------------------
+(2) Trivial
+    *10672 Marbles On A Tree
+    10305 Ordering Tasks
+    X           *The Tower Of Babylon               #### Time consuming ??
+(2) NonTrivial
+    12442 Forwarding Emails
+    200 Rare order
+
+
+(5) 9. Graph Algorithms
+-------------------
+(3) Trivial
+    821 Page Hopping
+    567 Risk
+    10171 Meeting Prof. Miguel...
+(2) NonTrivial
+    *10034 Freckles
+    *869 Airline Comparison
+
+    ???? 125 Numbering Paths (NT Floyd warshals?)
+    ???? 10724 ??? FLOYD WARSH ??
+    ???? 929 Number Maze (suggested by Tam)
+
+
+(5) 10. Dynamic Programming
+-------------------
+(2) Trivial
+    *10003 Cutting Sticks
+    *00674 Coin Change
+(3) NonTrivial
+    00231 Testing The CATCHER
+    10819 Trouble of 13-Dots
+    00216 Getting in line
+
+
+(4) 11. Geometry
+-------------------
+(4) Trivial
+    *10065 Useless Tile Packers
+    11447 Reservoir Logs
+    10678 The Grazing Cow
+    10263 Railway
+(0) NonTrivial
+    X*  811 The Fortified Forest
+
+
+(8) 12. Other
+-------------------
+(7) Trivial
+    11727 Cost Cutting                      ~~~~~~~
+    11172 Relational Operators              ~~~~~~~
+    12372 Packing For Holiday
+    12279 Emoogle Balance
+    11498 Division of Nlogonia
+    1124 Celebrity Jeopardy
+    12289 One-Two-Three
+(1) NonTrivial
+    1266 Magic Square
+
+
+Things to come back to...
+-------------------
+- Strings - 2D grid
+- Strings/DP - String Processing with DP
+- Binary Search/Divide And Conquer 3.3 (other?)
+- Greedy 3.4 (other?)
+- NonClassical DP
+- Bottom Up DP
+- Pancake sort (trivial)  120 - Stacks of Flapjacks
+- Sorting in Linear Time (trivial) 11462 - Age Sort
